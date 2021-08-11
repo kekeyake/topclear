@@ -1,0 +1,130 @@
+.main.__login {
+    width: 100%;
+    background: #333;
+    padding:vw(70) vw(48) 0;
+    text-align: center;
+    
+    h1 {
+        font-size: vw(40);
+        font-weight: 700;
+        color:#fff;
+        letter-spacing: vw(-1);
+    }
+    .logo {
+        display: block;
+        margin:vw(55) auto 0;
+        width: vw(240);
+
+    }
+
+    .login_form {
+        margin-top: vw(80);
+        input {
+            padding-left: vw(40);
+            color:#333;
+            margin-bottom: vw(15);
+            &::placeholder {
+                color:rgba(51, 51, 51, .5);
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &.input_id {
+                background:#fff url(../img/login/ico_id.svg) no-repeat vw(15) 50% / vw(18);
+            }
+            &.input_pw {
+                background:#fff url(../img/login/ico_pw.svg) no-repeat vw(18) 50% / vw(13);
+            }
+        }
+        .btn_login {
+            background-color: #ff6611;
+            padding-left: 0;
+            color:#fff;
+            font-size: vw(20);
+        }
+    }
+    .t1 {
+        margin-top: vw(84);
+        font-size: vw(32);
+        letter-spacing: vw(-0.8);
+        font-weight: 400;
+        color:#fff;
+    }
+    .link {
+        margin-top: vw(60);
+        font-size: vw(20);
+        border: 1px solid #fff;
+        color:#fff;
+        width: vw(185);
+        height: vw(60);
+
+    }
+}
+
+
+@include desktop {
+
+    .main.__login {
+        width: 1000px;
+        margin:0 auto;
+        padding:110px 0 100px;
+        
+        h1 {
+            font-size: 40px;
+            font-weight: 700;
+            color:#fff;
+            letter-spacing: -0.5px;
+        }
+        .logo {
+            display: block;
+            margin:55px auto 0;
+            width: 240px;
+    
+        }
+    
+        .login_form {
+            width: 748px;
+            margin: 80px auto 0;
+            position: relative;
+            input {
+                width: 550px;
+                padding-left: 40px;
+                margin-bottom: 15px;
+                
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &.input_id {
+                    background:#fff url(../img/login/ico_id.svg) no-repeat 15px 50% / 18px;
+                }
+                &.input_pw {
+                    background:#fff url(../img/login/ico_pw.svg) no-repeat 18px 50% / 13px;
+                }
+            }
+            .btn_login {
+                position: absolute;
+                right:0;
+                top:0;
+                width: 185px;
+                height: 135px;
+                background-color: #ff6611;
+                font-size: 18px;
+            }
+        }
+        .t1 {
+            margin-top: 110px;
+            font-size: 32px;
+            letter-spacing: -0.8px;
+        }
+        .link {
+            margin-top: 60px;
+            font-size: 18px;
+            border: 1px solid #fff;
+            color:#fff;
+            width: 185px;
+            height: 60px;
+            text-decoration: none;
+        }
+    }
+    
+}
