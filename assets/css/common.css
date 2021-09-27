@@ -429,4 +429,281 @@ input.text {
     text-decoration: none;
   }
 }
+
+.main.__join .__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 7.8125vw 0 4.6875vw;
+  border-bottom: 1px solid #fff;
+}
+
+.main.__join .__top h1 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  text-align: center;
+  font-size: 6.25vw;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.3125vw;
+}
+
+.main.__join .__top img {
+  display: block;
+  width: 18.75vw;
+  margin: 0 auto 6.25vw;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.main.__join .join_form {
+  padding: 4.6875vw 12.5vw;
+}
+
+.main.__join .join_form .join_form_box {
+  position: relative;
+  margin-bottom: 9.375vw;
+}
+
+.main.__join .join_form .join_form_box label {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5625vw;
+  font-size: 2.8125vw;
+  color: #fff;
+}
+
+.main.__join .join_form .join_form_box label i {
+  color: #ff6611;
+}
+
+.main.__join .join_form .join_form_box .text {
+  padding: 0 3.125vw;
+}
+
+.main.__join .join_form .join_form_box.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main.__join .join_form .join_form_box.btn .text {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.main.__join .join_form .join_form_box.btn button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 2.8125vw;
+  border: 0 solid #000;
+  height: 9.375vw;
+  width: 16.40625vw;
+  background-color: #ff6611;
+  color: #fff;
+}
+
+.main.__join .caution_wrap {
+  padding: 7.8125vw 4.6875vw;
+  color: #ff6611;
+}
+
+.main.__join .caution_wrap h2 {
+  font-size: 3.125vw;
+  margin-bottom: 6.25vw;
+  position: relative;
+  padding-left: 3.75vw;
+}
+
+.main.__join .caution_wrap h2::before {
+  content: '';
+  display: block;
+  width: 3.125vw;
+  height: 3.4375vw;
+  background: url(../img/join/ico_caution.png) no-repeat 0 0/3.125vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main.__join .caution_wrap li {
+  font-size: 2.8125vw;
+  margin-bottom: 1.5625vw;
+}
+
+.main.__join .btn_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 9.375vw 0;
+  border-top: 1px solid #fff;
+}
+
+.main.__join .btn_wrap .link {
+  width: 22.65625vw;
+  height: 9.375vw;
+  background-color: #ff6611;
+  border: 1px solid #ff6611;
+  color: #fff;
+  margin: 0 1.5625vw;
+}
+
+.main.__join .btn_wrap .link:hover {
+  text-decoration: none;
+}
+
+.main.__join .btn_wrap button {
+  width: 22.65625vw;
+  height: 9.375vw;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .main.__join {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .main.__join .__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 60px 0 20px;
+  }
+  .main.__join .__top h1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: left;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -1px;
+    font-size: 40px;
+  }
+  .main.__join .__top img {
+    display: block;
+    width: 120px;
+    margin: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .main.__join .join_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 30px 0 0;
+  }
+  .main.__join .join_form .join_form_box {
+    width: 48%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .main.__join .join_form .join_form_box label {
+    display: block;
+    width: 115px;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #fff;
+  }
+  .main.__join .join_form .join_form_box label i {
+    color: #ff6611;
+  }
+  .main.__join .join_form .join_form_box .text {
+    padding: 0 20px;
+    width: 364px;
+    font-size: 16px;
+  }
+  .main.__join .join_form .join_form_box.btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 480px;
+  }
+  .main.__join .join_form .join_form_box.btn .text {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    width: 205px;
+  }
+  .main.__join .join_form .join_form_box.btn button {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    font-size: 16px;
+    height: 60px;
+    width: 145px;
+  }
+  .main.__join .caution_wrap {
+    padding: 50px 0;
+  }
+  .main.__join .caution_wrap h2 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    padding-left: 24px;
+  }
+  .main.__join .caution_wrap h2::before {
+    width: 20px;
+    height: 22px;
+    background: url(../img/join/ico_caution.png) no-repeat 0 0/20px;
+  }
+  .main.__join .caution_wrap ol {
+    padding-left: 24px;
+  }
+  .main.__join .caution_wrap li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .main.__join .btn_wrap {
+    padding: 45px 0;
+    font-size: 18px;
+  }
+  .main.__join .btn_wrap .link {
+    width: 145px;
+    height: 60px;
+    margin: 0 10px;
+  }
+  .main.__join .btn_wrap button {
+    width: 145px;
+    height: 60px;
+  }
+}
 /*# sourceMappingURL=common.css.map */

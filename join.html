@@ -18,31 +18,72 @@
     <script defer src="assets/libs/swiper-bundle.min.js"></script>
 </head>
 <body>
-<script type="text/javascript">   
-    $(document).ready( function() {
-        // $("#headers").load("../layout/header.html");  //헤더 인클루드
-        // $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
-    });
-</script>
 <div class="bg_dimmed"></div>
 <div id="wrap">
-<div data-include-path="layout/header.html" id="headers"></div>
+<!-- main, sub만 사용 -->
+<!-- <div data-include-path="layout/header.html" id="headers"></div> -->
 
 
-<main class="main __login">
-    <h1>탑클리어에 오신 것을 환영합니다.</h1>
-    <img src="assets/img/login/logo.svg" alt="TOP CLEAR" class="logo">
-    <div class="login_form">
-        <input type="text" placeholder="아이디를 입력하세요" class="input_id text">
-        <input type="password" placeholder="비밀번호를 입력하세요" class="input_pw text">
-        <button type="button" class="btn btn_login btn-a">로그인</button>
-        <p class="t1">아직 탑클리어 회원이 아니신가요?</p>
-        <a href="#a" class="link btn-a"><span>회원가입</span></a>
+<main class="main __join">
+    <div class="__top">
+        <h1>회원 정보 입력</h1>
+        <img src="assets/img/login/logo.svg" alt="TOP CLEAR" class="logo">
+    </div>
+    
+    <div class="join_form">
+        <div class="join_form_box">
+            <label for="i1">아이디 <i class="required">*</i></label>
+            <input type="text" placeholder="ex)영문자, 숫자 입력 가능(4자~16자로 입력)" class="text">
+        </div>
+        <div class="join_form_box">
+            <label for="i2">닉네임 <i class="required">*</i></label>
+            <input type="text" placeholder="사용할 닉네임을 입력하세요" class="text">
+        </div>
+        <div class="join_form_box">
+            <label for="i3">비밀번호 <i class="required">*</i></label>
+            <input type="password" placeholder="ex)영문자, 숫자, 특수문자 조합(4자~16자로 입력)" class="text">
+        </div>
+        <div class="join_form_box">
+            <label for="i4">비밀번호 확인 <i class="required">*</i></label>
+            <input type="password" placeholder="같은 비밀번호를 한번 더 입력하세요" class="text">
+        </div>
+
+        <div class="join_form_box btn">
+            <label for="i5">코드/추천인</label>
+            <input type="text" placeholder="" class="text">
+            <button type="button" class="btn-a"><span>확인</span></button>
+        </div>
+
+        <div class="join_form_box">
+            <label for="i6">이메일주소</label>
+            <input type="text" placeholder="이메일을 입력하세요" class="text">
+        </div>
+        <div class="join_form_box btn">
+            <label for="i7">휴대폰번호 <i class="required">*</i></label>
+            <input type="text" placeholder="전화번호를 입력하세요" class="text">
+            <button type="button" class="btn-a"><span>인증번호 요청</span></button>
+        </div>
+        <div class="join_form_box">
+            <label for="i8">인증코드 <i class="required">*</i></label>
+            <input type="text" placeholder="" class="text">
+        </div>        
+    </div>
+    <div class="caution_wrap">
+        <h2>주의사항</h2>
+        <ol>
+            <li>1. 필수항목(*) 미 입력시 회원가입이 불가능합니다.</li>
+            <li>2. 중복된 정보 또는 허위 정보 가입하시는 경우, 사이트 이용이 제한됩니다.</li>
+            <li>3, 입/출금 및 콘텐츠 이용은 가입 후 본인계좌정보 등록 후 사용가능합니다. </li>
+        </ol>
+    </div>
+    <div class="btn_wrap">
+        <a href="#a" class="link btn-a">회원가입</a>
+        <button type="button" class="btn-a"><span>취소</span></button>
     </div>
 </main>
 
-
-<div data-include-path="layout/footer.html" id="footers"></div>
+<!-- main, sub만 사용 -->
+<!-- <div data-include-path="layout/footer.html" id="footers"></div> -->
 <script defer src="assets/js/ui.js"></script>
 </body>
 </html>
