@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TOP CLEAR">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <title>TOP CLEAR</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="assets/css/font.css" />
+    <link type="text/css" rel="stylesheet" href="assets/libs/swiper-bundle.min.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/common.min.css" />
+    <script defer src="assets/libs/jquery-3.6.0.min.js"></script>
+    <script defer src="assets/libs/swiper-bundle.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        // $("#headers").load("../layout/header.html");  //헤더 인클루드
+        // $("#footers").load("../layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+<div class="bg_dimmed"></div>
+<div id="wrap">
+<div data-include-path="layout/header.html" id="headers"></div>
+
+
+<main class="main __login">
+    <h1>탑클리어에 오신 것을 환영합니다.</h1>
+    <img src="assets/img/login/logo.svg" alt="TOP CLEAR" class="logo">
+    <div class="login_form">
+        <input type="text" placeholder="아이디를 입력하세요" class="input_id text">
+        <input type="password" placeholder="비밀번호를 입력하세요" class="input_pw text">
+        <button type="button" class="btn btn_login btn-a">로그인</button>
+        <p class="t1">아직 탑클리어 회원이 아니신가요?</p>
+        <a href="#a" class="link btn-a"><span>회원가입</span></a>
+    </div>
+</main>
+
+
+<div data-include-path="layout/footer.html" id="footers"></div>
+<script defer src="assets/js/ui.js"></script>
+</body>
+</html>
