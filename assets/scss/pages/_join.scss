@@ -36,6 +36,9 @@
             }
             .text {
                 padding:0 vw(20);
+                &.error {
+                    border: 4px solid #db3444;
+                }
             }
             &.btn {
                 display: flex;
@@ -49,9 +52,16 @@
                     border: 0 solid #000;
                     height: vw(60);
                     width: vw(105);
-                    background-color: #ff6611;
-                    color:#fff;
+                    cursor: pointer;
+                    background-color: transparent;
                 }
+            }
+            .error_txt {
+                color:#db3444;
+                font-size: vw(20);
+                text-align: left;
+                margin: vw(10) 0;
+                width: 100%;
             }
         }
     }
@@ -88,9 +98,6 @@
         .link{
             width: vw(145);
             height: vw(60);
-            background-color: #ff6611;
-            border: 1px solid #ff6611;;
-            color:#fff;
             margin:0 vw(10);
             &:hover {
                 text-decoration: none;
@@ -100,7 +107,7 @@
             width: vw(145);
             height: vw(60);
             color:#fff;
-            border: 1px solid #fff;
+            border: 0 solid #fff;
             background-color: transparent;
             cursor: pointer;
         }
@@ -139,9 +146,11 @@
             .join_form_box {
                 width: 48%;
                 display: flex;
+                flex-wrap: wrap;
                 align-items: center;
                 position: relative;
                 margin-bottom: 30px;
+                padding-bottom: 20px;
                 label {
                     display: block;
                     width: 115px;
@@ -171,6 +180,13 @@
                         height: 60px;
                         width: 145px;
                     }
+                }
+                .error_txt {
+                    position: absolute;
+                    left:115px;
+                    top:70px;
+                    font-size: 18px;
+                    margin:0;
                 }
             }
         }

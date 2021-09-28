@@ -19,33 +19,34 @@
 
     .login_form {
         margin-top: vw(80);
-        input {
-            padding-left: vw(40);
-            color:#333;
-            margin-bottom: vw(15);
-            &::placeholder {
-                color:rgba(51, 51, 51, .5);
+        .login_form_box {
+            
+            input {
+                padding-left: vw(40);
+                color:#333;
+                margin-bottom: vw(15);
+                &::placeholder {
+                    color:rgba(51, 51, 51, .5);
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &.input_id {
+                    background:#fff url(../img/login/ico_id.svg) no-repeat vw(15) 50% / vw(18);
+                }
+                &.input_pw {
+                    background:#fff url(../img/login/ico_pw.svg) no-repeat vw(18) 50% / vw(13);
+                }
+                &.error {
+                    border: 4px solid #db3444;
+                }
+            }            
+            .btn_login {
+                width: 100%;
+                height: vw(60);
+                position: relative;
+                font-size: vw(20);
             }
-            &:last-child {
-                margin-bottom: 0;
-            }
-            &.input_id {
-                background:#fff url(../img/login/ico_id.svg) no-repeat vw(15) 50% / vw(18);
-            }
-            &.input_pw {
-                background:#fff url(../img/login/ico_pw.svg) no-repeat vw(18) 50% / vw(13);
-            }
-        }
-        .btn_login {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #ff6611;
-            padding-left: 0;
-            color:#fff;
-            font-size: vw(20);
-            width: 100%;
-            height: vw(60);
         }
     }
     .t1 {
@@ -56,13 +57,10 @@
         color:#fff;
     }
     .link {
-        margin-top: vw(60);
-        font-size: vw(20);
-        border: 1px solid #fff;
-        color:#fff;
+        margin-top: vw(60);        
         width: vw(185);
         height: vw(60);
-
+        font-size: vw(20);
     }
 }
 
@@ -91,29 +89,30 @@
             width: 748px;
             margin: 80px auto 0;
             position: relative;
-            input {
-                width: 550px;
-                padding-left: 40px;
-                margin-bottom: 15px;
-                
-                &:last-child {
-                    margin-bottom: 0;
+            .login_form_box {
+                input {
+                    width: 550px;
+                    padding-left: 40px;
+                    margin-bottom: 15px;
+                    
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &.input_id {
+                        background:#fff url(../img/login/ico_id.svg) no-repeat 15px 50% / 18px;
+                    }
+                    &.input_pw {
+                        background:#fff url(../img/login/ico_pw.svg) no-repeat 18px 50% / 13px;
+                    }
                 }
-                &.input_id {
-                    background:#fff url(../img/login/ico_id.svg) no-repeat 15px 50% / 18px;
+                .btn_login {
+                    position: absolute;
+                    right:0;
+                    top:0;
+                    width: 185px;
+                    height: 135px;
+                    font-size: 18px;
                 }
-                &.input_pw {
-                    background:#fff url(../img/login/ico_pw.svg) no-repeat 18px 50% / 13px;
-                }
-            }
-            .btn_login {
-                position: absolute;
-                right:0;
-                top:0;
-                width: 185px;
-                height: 135px;
-                background-color: #ff6611;
-                font-size: 18px;
             }
         }
         .t1 {
@@ -123,12 +122,9 @@
         }
         .link {
             margin-top: 60px;
-            font-size: 18px;
-            border: 1px solid #fff;
-            color:#fff;
             width: 185px;
             height: 60px;
-            text-decoration: none;
+            font-size: 18px;
         }
     }
     
