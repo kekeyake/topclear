@@ -1,4 +1,85 @@
+.header {
+    .__top {
+        background-color: #555;
+        .inner {
+            width: 1296px;
+            height: 40px;
+            margin:0 auto;
+            display: flex;
+            align-items: center;
+            padding:0 15px;
+        }
+        .tit {
+            width: 95px;
+            padding-right: 30px;
+            background: url(../img/header/ico_notice.png) no-repeat 66px 50% / 24px;
+            font-size: 16px;
+            color:#fff;
+        }
+        .text_slide {
+            width:calc(100% - 105px);
+            height: 40px;
+            overflow:hidden;
+            position:relative;
+            display: flex;
+            align-items: center;
+            p:hover {
+                animation-play-state: paused;
+            }
+            p:after {
+                content:"";
+                white-space:nowrap;
+                padding-right:50px;
+            }
+            p {
+                margin:0;
+                padding-left:100%;
+                display:inline-block;
+                white-space:nowrap;
+                line-height: 40px;
+                font-size: 14px;
+                color:#fff;
+                animation-name:marquee;
+                animation-timing-function:linear;
+                animation-duration:20s;
+                animation-iteration-count:infinite;
+            }
+        }
+        @keyframes marquee {
+            from   { transform: translate(0%);}
+            99%,to { transform: translate(-100%);}
+        }
+    }
+    .gnb {
+        background-color: #333;
+        height: 132px;
+        display: flex;
+        align-items: center;
+        padding-left: 90px;
+        .logo {
+            img {
+                width: 101px;
+            }
+        }
+        nav {
+            font-size: 20px;
+            font-weight: 700;
+            ul {
+                display: flex;
+                align-items: center;
+                padding:0 30px;
+            }
+            a {
+                margin:0 25px;
+                color:#fff;
+            }
+        }
+        .user_wrap {
+            display: flex;
+        }
+    }
+}
 
-@include desktop {
+@include mobile {
 
 }
