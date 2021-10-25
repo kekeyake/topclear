@@ -462,6 +462,27 @@ header, footer, section, article, aside, nav, hgroup, details, menu, figure, fig
   color: #ff6611;
 }
 
+.footer .sponsor_wrap {
+  background-color: #555;
+  width: 100%;
+}
+
+.footer .sponsor_wrap ul {
+  width: 1296px;
+  height: 78px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .sponsor_wrap ul li {
+  margin: 0 30px;
+}
+
 body {
   font-size: 3.4375vw;
   -ms-overflow-style: none;

@@ -1,4 +1,19 @@
-
+.footer {
+    .sponsor_wrap {
+        background-color: #555;
+        width: 100%;        
+        ul {
+            width: 1296px;
+            height: 78px;
+            margin:0 auto;
+            display: flex;
+            align-items: center;
+            li {
+                margin:0 30px;
+            }
+        }
+    }
+}
 @include mobile {
     
 }
