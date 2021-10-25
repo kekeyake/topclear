@@ -277,7 +277,9 @@ header, footer, section, article, aside, nav, hgroup, details, menu, figure, fig
 
 .header .gnb {
   background-color: #333;
+  width: 1920px;
   height: 132px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,6 +317,149 @@ header, footer, section, article, aside, nav, hgroup, details, menu, figure, fig
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .gnb .user_wrap .user_box {
+  width: 180px;
+  text-align: center;
+}
+
+.header .gnb .user_wrap .user_box .user_state {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .gnb .user_wrap .user_box .user_name {
+  color: #ff6611;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.header .gnb .user_wrap .user_box .user_name b {
+  font-weight: 700;
+}
+
+.header .gnb .user_wrap .user_box .logout {
+  background-color: transparent;
+  font-size: 14px;
+  color: #fff;
+  width: auto;
+  height: auto;
+  border: 0 solid #000;
+  padding: 0;
+  margin: 0 10px;
+  text-decoration: underline;
+}
+
+.header .gnb .user_wrap .user_box .money_box {
+  width: 180px;
+  height: 50px;
+  margin-top: 10px;
+  background: url(../img/header/bg_point.png) no-repeat 0 0/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.header .gnb .user_wrap .user_box .money_box span {
+  font-size: 16px;
+  color: #fff;
+}
+
+.header .gnb .user_wrap .user_box .money_box span::before {
+  font-size: 16px;
+  content: "₩";
+  color: #fff;
+  margin-right: 2px;
+}
+
+.header .gnb .user_wrap .user_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15px;
+}
+
+.header .gnb .user_wrap .user_link li {
+  text-align: center;
+  margin: 0 15px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.header .gnb .user_wrap .user_link li img {
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.header .gnb .user_wrap .user_link li span {
+  font-size: 14px;
+  color: #fff;
+}
+
+.header .gnb .user_wrap .user_link li em {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  font-size: 12px;
+  font-weight: 700;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  right: -5px;
+  top: -5px;
+}
+
+.header .gnb .user_wrap .user_link .my img {
+  width: 21px;
+  top: 0;
+}
+
+.header .gnb .user_wrap .user_link .post img {
+  width: 27px;
+  top: 5px;
+}
+
+.header .gnb .user_wrap .user_link .post em {
+  background-color: #ff6611;
+  color: #fff;
+}
+
+.header .gnb .user_wrap .user_link .bookmark img {
+  width: 21px;
+  top: 5px;
+}
+
+.header .gnb .user_wrap .user_link .bookmark em {
+  background-color: #fff;
+  color: #ff6611;
 }
 
 body {
