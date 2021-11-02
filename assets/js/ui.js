@@ -1,7 +1,4 @@
 $(document).ready( function() {
-    $("#headers").load("/layout/header.html");  //헤더 인클루드
-    $("#footers").load("/layout/footer.html");  //푸터부분 인클루드
-
     if ( $('.top_banner').length > 0 ) {
         var swiper = new Swiper(".top_banner", {
             pagination: {
