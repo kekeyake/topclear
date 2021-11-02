@@ -58,6 +58,7 @@
         display: flex;
         align-items: center;
         padding-left: 90px;
+        padding-right: 40px;
         .logo {
             img {
                 width: 101px;
@@ -79,6 +80,7 @@
         .user_wrap {
             display: flex;
             align-items: center;
+            margin-left: auto;
             .user_box {
                 width: 180px;
                 text-align: center;
@@ -131,10 +133,10 @@
             .user_link {
                 display: flex;
                 margin-left: 15px;
+                height: 80px;
                 li {
                     text-align: center;
                     margin:0 15px;
-                    padding-top: 10px;
                     position: relative;
                     img {
                         display: block;
