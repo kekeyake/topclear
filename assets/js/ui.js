@@ -1,7 +1,14 @@
 $(document).ready( function() {
     $("#headers").load("layout/header.html");  //헤더 인클루드
     $("#footers").load("layout/footer.html");  //푸터부분 인클루드
-
+    $(window).scroll(function (event) {
+        if ($(window).scrollTop() >= 100) {
+            $('header').addClass('sticky');
+        }
+        else {
+            $('header').removeClass('sticky');
+        }
+    });
     if ( $('.top_banner').length > 0 ) {
         var swiper = new Swiper(".top_banner", {
             pagination: {
@@ -44,4 +51,16 @@ $(document).ready( function() {
             },
         });
     }
+    $('.game_list .btm_box a').on('click',function(){
+        $('.alert_pop').show();
+        $('.bg_dimmed').addClass('on');
+    });
+    $('.btn_x').on('click',function(){
+        $(this).closest('.alert_pop').hide();
+        $('.bg_dimmed').removeClass('on');
+    });
+    $('.button_b').on('click', function () {
+        $(this).closest('.alert_pop').hide();
+        $('.bg_dimmed').removeClass('on');
+    });
 });

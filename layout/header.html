@@ -13,16 +13,52 @@
             <h1 class="logo"><a href="#a"><img src="assets/img/header/logo.png" alt="TOP CLEAR"></a></h1>
             <nav>
                 <ul>
-                    <li><a href="#a">스포츠</a></li>
-                    <li><a href="#a">가상스포츠</a></li>
-                    <li><a href="#a">라이브카지노</a></li>
-                    <li><a href="#a">슬롯</a></li>
-                    <li><a href="#a">게임</a></li>
-                    <li><a href="#a">포커</a></li>
-                    <li><a href="#a">고객센터</a></li>
-                    <li><a href="#a">공지사항</a></li>
+                    <li data-rel="sub1"><a href="#a">스포츠</a></li>
+                    <li data-rel="sub2"><a href="#a">가상스포츠</a></li>
+                    <li data-rel="sub3"><a href="#a">라이브카지노</a></li>
+                    <li data-rel="sub4"><a href="#a">슬롯</a></li>
+                    <li data-rel="sub5"><a href="#a">게임</a></li>
+                    <li data-rel="sub6"><a href="#a">포커</a></li>
+                    <li data-rel="sub7"><a href="#a">고객센터</a></li>
+                    <li data-rel="sub8"><a href="#a">공지사항</a></li>
                 </ul>
             </nav>
+            <div class="sub_menu_bg">
+                <div class="sub_menu_wrap">
+                    <div class="sub_menu" id="sub1">
+                        <a href="#a">
+                            <img src="assets/img/header/sub_menu_img.png" alt="">
+                            <span>버추얼 스포츠</span>
+                        </a>
+                        <a href="#a">
+                            <img src="assets/img/header/sub_menu_img.png" alt="">
+                            <span>버추얼 스포츠</span>
+                        </a>
+                        <a href="#a">
+                            <img src="assets/img/header/sub_menu_img.png" alt="">
+                            <span>버추얼 스포츠</span>
+                        </a>
+                        <a href="#a">
+                            <img src="assets/img/header/sub_menu_img.png" alt="">
+                            <span>버추얼 스포츠</span>
+                        </a>
+                    </div>
+                    <div class="sub_menu" id="sub2">
+                        <a href="#a">
+                            <img src="assets/img/header/sub_menu_img.png" alt="">
+                            <span>버추얼 스포츠</span>
+                        </a>
+                        <a href="#a">
+                            <img src="assets/img/header/sub_menu_img.png" alt="">
+                            <span>버추얼 스포츠</span>
+                        </a>
+                        <a href="#a">
+                            <img src="assets/img/header/sub_menu_img.png" alt="">
+                            <span>버추얼 스포츠</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
             <div class="user_wrap">
                 <div class="user_box">
                     <div class="user_state">
@@ -59,3 +95,13 @@
         </section>
     </header>
     <!--// header -->
+    <script>
+        $('nav li').mouseenter(function () {
+            var tg = $(this).attr('data-rel');
+            $('.sub_menu').removeClass('on');
+            $('#'+tg).addClass('on');
+        });
+        $('.sub_menu_bg').mouseleave(function () {
+            $('.sub_menu').removeClass('on');
+        });
+    </script>

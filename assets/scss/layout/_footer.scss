@@ -114,6 +114,65 @@
         }
     }
 }
+.quick_wrap {
+    position: fixed;
+    right:10px;
+    bottom:100px;
+    ul {
+        width: 78px;
+        li {
+            width: 78px;
+            height: 78px;
+            position: relative;
+            overflow: hidden;
+            &:nth-child(1) {
+                background: #ccc url(../img/footer/quick_01.png) no-repeat 50% 50%;
+            }
+            &:nth-child(2) {
+                background: #ccc url(../img/footer/quick_02.png) no-repeat 50% 50%;
+            }
+            &:nth-child(3) {
+                background: #ccc url(../img/footer/quick_03.png) no-repeat 50% 50%;
+            }
+            &:nth-child(4) {
+                background: #ccc url(../img/footer/quick_04.png) no-repeat 50% 50%;
+            }
+            &:nth-child(5) {
+                background: #ccc url(../img/footer/quick_05.png) no-repeat 50% 50%;
+            }
+            &:nth-child(6) {
+                background: #ccc url(../img/footer/quick_06.png) no-repeat 50% 50%;
+            }
+            span {
+                position: absolute;
+                right: 78px;
+                top:0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 0;
+                height: 78px;
+                font-size: 0;
+                background-color: #ccc;
+                color:#ff6611;
+                letter-spacing: -1px;
+                transition: all .5s;
+            }
+            &.on {
+                overflow: visible;
+                span {
+                    width: 140px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .__top {
+        width: 78px;
+        height: 78px;
+        background: #ff6611 url(../img/footer/quick_btn.png) no-repeat 50% 50%;
+    }
+}
 @include mobile {
     
 }

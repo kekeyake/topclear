@@ -84,6 +84,49 @@
         <p>ⓒ Since 2021 TOPCLEAR Co, All Rights Reserved.</p>
     </div>
 </footer>
+<!--// footer -->
+</div>
+<div class="quick_wrap">
+    <ul>
+        <li>
+            <a href="#a">
+                <span>이용가이드</span>
+            </a>
+        </li>
+        <li>
+            <a href="#a">
+                <span>이용가이드</span>
+            </a>
+        </li>
+        <li>
+            <a href="#a">
+                <span>이용가이드</span>
+            </a>
+        </li>
+        <li>
+            <a href="#a">
+                <span>이용가이드</span>
+            </a>
+        </li>
+        <li>
+            <a href="#a">
+                <span>이용가이드</span>
+            </a>
+        </li>
+        <li>
+            <a href="#a">
+                <span>이용가이드</span>
+            </a>
+        </li>
+    </ul>
+    <button class="btn __top"></button>
+</div>
+
+<!-- mobile nav -->
+<aside class="side_nav">
+    
+</aside>
+<!--// mobile nav -->
 <script>
     if ($('.sponsor_wrap').length > 0) {
         var swiper4 = new Swiper(".sponsor_wrap .swiper-container", {
@@ -98,14 +141,11 @@
             observeParents: true,
         });
     }
+    $('.quick_wrap li').mouseenter(function () {
+        $(this).addClass('on');
+    });
+    $('.quick_wrap li').mouseleave(function () {
+        $(this).removeClass('on');
+    });
+    $('.quick_wrap .__top').click(function () { $('html, body').animate({ scrollTop: 0 }, 400); scrollY = 500; });
 </script>
-<!--// footer -->
-</div>
-<button class="btn __top"></button>
-
-<!-- mobile nav -->
-<aside class="side_nav">
-    
-</aside>
-<!--// mobile nav -->
-
