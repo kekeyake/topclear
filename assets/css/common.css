@@ -972,6 +972,7 @@ header, footer, section, article, aside, nav, hgroup, details, menu, figure, fig
   position: fixed;
   right: 10px;
   bottom: 100px;
+  z-index: 10;
 }
 
 .quick_wrap ul {
