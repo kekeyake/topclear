@@ -1876,11 +1876,12 @@ input.text {
 .main .main_cont .game_list li .ico {
   position: absolute;
   right: 0;
-  top: -20px;
+  top: -14px;
 }
 
 .main .main_cont .game_list li .ico img {
   width: 55px;
+  vertical-align: top;
 }
 
 .main .main_cont .game_list li .top_box {
