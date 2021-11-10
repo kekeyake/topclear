@@ -1222,6 +1222,11 @@ header, footer, section, article, aside, nav, hgroup, details, menu, figure, fig
   }
   .mo_quick_wrap ul li a p img {
     width: 50%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .mo_quick_wrap ul li:nth-child(10) a p img {
+    width: 30%;
   }
   .mo_quick_wrap .swiper-button-next::after,
   .mo_quick_wrap .swiper-button-prev::after {
@@ -2402,13 +2407,227 @@ input.text {
 }
 
 @media (max-width: 767px) {
+  .main .top_banner {
+    width: 100%;
+    min-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .main .top_banner .paging {
+    display: none;
+  }
+  .main .top_banner .swiper-slide img {
+    width: 100%;
+  }
   .main .main_cont {
     width: 100%;
     margin: 0 auto;
     padding-top: 40px;
   }
+  .main .main_cont h2 {
+    font-size: 6.25vw;
+  }
+  .main .main_cont .game_list {
+    margin-top: 40px;
+  }
+  .main .main_cont .game_list ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  .main .main_cont .game_list li {
+    width: 48%;
+    margin-bottom: 4%;
+    border: 1px solid #929292;
+    position: relative;
+  }
+  .main .main_cont .game_list li .ico {
+    position: absolute;
+    right: 0;
+    top: -2.1875vw;
+  }
+  .main .main_cont .game_list li .ico img {
+    width: 8.59375vw;
+  }
+  .main .main_cont .game_list li .top_box {
+    font-size: 2.1875vw;
+    padding: 1.5625vw 2.34375vw;
+  }
+  .main .main_cont .game_list li .top_box span {
+    margin-left: 1.5625vw;
+  }
+  .main .main_cont .game_list li .img_box img {
+    width: 100%;
+  }
+  .main .main_cont .game_list li .btm_box {
+    font-size: 2.65625vw;
+    padding: 2.34375vw 2.34375vw 1.5625vw;
+  }
+  .main .main_cont .game_list li .btm_box a {
+    font-size: 1.71875vw;
+    line-height: 2.96875vw;
+    width: 6.40625vw;
+    height: 3.4375vw;
+    background: url(../img/main/ico_info_off.png) no-repeat 50%/6.40625vw 3.4375vw;
+  }
+  .main .main_cont .game_list li .btm_box a:hover {
+    background: url(../img/main/ico_info_on.png) no-repeat 50%/6.40625vw 3.4375vw;
+  }
+  .main .main_cont .new_wrap {
+    padding: 0 7.03125vw;
+  }
+  .main .main_cont .list_wrap {
+    margin-top: 12.5vw;
+    display: block;
+    border-bottom: 1px solid #bbb;
+  }
+  .main .main_cont .list_wrap h2 {
+    padding: 6.25vw;
+    border-bottom: 1px solid #bbb;
+  }
+  .main .main_cont .list_wrap > div {
+    width: 100%;
+    position: relative;
+  }
+  .main .main_cont .list_wrap > div ul {
+    margin-top: 3.125vw;
+    padding-right: 4.6875vw;
+  }
+  .main .main_cont .list_wrap .notice_box {
+    color: #fff;
+    border-bottom: 1px solid #bbb;
+  }
+  .main .main_cont .list_wrap .notice_box ul {
+    padding: 0 6.25vw;
+    border-right: 0 solid #777;
+    margin-bottom: 3.125vw;
+  }
+  .main .main_cont .list_wrap .notice_box .link_more {
+    position: absolute;
+    right: 7.03125vw;
+    top: 6.25vw;
+    display: block;
+    width: 8.125vw;
+    height: 8.125vw;
+  }
+  .main .main_cont .list_wrap .notice_box .link_more img {
+    width: 100%;
+  }
+  .main .main_cont .list_wrap .notice_box li {
+    padding: 3.125vw 0;
+  }
+  .main .main_cont .list_wrap .notice_box a {
+    font-size: 3.125vw;
+    width: 54.6875vw;
+  }
+  .main .main_cont .list_wrap .notice_box .date {
+    font-size: 2.1875vw;
+  }
+  .main .main_cont .list_wrap .realtime_wrap {
+    margin-top: 3.125vw;
+    border-bottom: 1px solid #bbb;
+  }
+  .main .main_cont .list_wrap .realtime_wrap h2 {
+    text-align: left;
+    color: #ff6611;
+  }
+  .main .main_cont .list_wrap .realtime_wrap .realtime {
+    overflow: hidden;
+    height: 57.03125vw;
+    margin-top: 3.125vw;
+    padding-left: 4.6875vw;
+    padding-right: 4.6875vw;
+    padding-bottom: 6.25vw;
+    border-right: 1px solid #777;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .main .main_cont .list_wrap .realtime_wrap .realtime ul {
+    margin-top: 7px;
+  }
+  .main .main_cont .list_wrap .realtime_wrap .realtime .date {
+    font-size: 2.1875vw;
+  }
+  .main .main_cont .list_wrap .realtime_wrap .realtime span {
+    font-size: 3.125vw;
+  }
+  .main .main_cont .list_wrap .realtime_wrap .realtime .swiper-slide-active {
+    margin-bottom: 3.125vw;
+  }
+  .main .main_cont .list_wrap .realtime_wrap .realtime .swiper-slide-active > div span {
+    font-size: 5vw;
+  }
+  .main .main_cont .list_wrap .realtime_wrap .realtime .swiper-slide-active > div .date {
+    margin-bottom: 2.65625vw;
+    font-size: 2.1875vw;
+  }
+  .main .main_cont .list_wrap .jackpot_wrap {
+    margin-top: 3.125vw;
+  }
+  .main .main_cont .list_wrap .jackpot_wrap h2 {
+    text-align: left;
+    color: #ff6611;
+  }
+  .main .main_cont .list_wrap .jackpot_wrap .jackpot {
+    height: 57.03125vw;
+    margin-top: 3.125vw;
+    padding-left: 4.6875vw;
+    padding-right: 4.6875vw;
+    padding-bottom: 9.375vw;
+  }
+  .main .main_cont .list_wrap .jackpot_wrap .jackpot .date {
+    font-size: 2.1875vw;
+  }
+  .main .main_cont .list_wrap .jackpot_wrap .jackpot span {
+    font-size: 3.125vw;
+  }
+  .main .main_cont .list_wrap .jackpot_wrap .jackpot .swiper-slide-active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 9.375vw;
+  }
+  .main .main_cont .list_wrap .jackpot_wrap .jackpot .swiper-slide-active > div span {
+    font-size: 5vw;
+  }
+  .main .main_cont .list_wrap .jackpot_wrap .jackpot .swiper-slide-active > div .user_id {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
   .main .main_cont .best_wrap {
     margin: 10.9375vw 0;
+    padding: 6.25vw;
+  }
+  .main .main_cont .best_wrap h2 {
+    padding-left: 3.90625vw;
+    background: url(../img/ico/ico_h3.png) no-repeat 0 50%/3.59375vw;
+  }
+  .main .main_cont .best_wrap h3 {
+    margin-top: 10.9375vw;
+    padding: 2.34375vw 5.46875vw;
+    font-size: 3.4375vw;
+  }
+  .main .main_cont .best_wrap .game_wrap .link_more {
+    position: absolute;
+    right: 0;
+    top: 11.71875vw;
+    width: 8.125vw;
+    height: 8.125vw;
+  }
+  .main .main_cont .best_wrap .game_wrap .link_more img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=common.css.map */

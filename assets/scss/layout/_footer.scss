@@ -317,7 +317,13 @@
                         align-items: center;
                         img {
                             width: 50%;
+                            object-fit: contain;
                         }
+                    }
+                }
+                &:nth-child(10) {
+                    a p img {
+                        width: 30%;
                     }
                 }
             }
