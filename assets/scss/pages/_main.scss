@@ -438,6 +438,13 @@
 
 @include mobile {
     .main {
-        
+        .main_cont {
+            width: 100%;
+            margin:0 auto;
+            padding-top: 40px;
+            .best_wrap {
+                margin: vw(70) 0;
+            }
+        } 
     }
 }

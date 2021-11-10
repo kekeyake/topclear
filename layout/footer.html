@@ -121,6 +121,50 @@
     </ul>
     <button class="btn __top"></button>
 </div>
+<div class="mo_quick_wrap">
+    <div class="inner">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <a href="#a">
+                    <p><img src="assets/img/footer/quick_01.png" alt=""></p>
+                    <span>입금하기</span>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#a">
+                    <p><img src="assets/img/footer/quick_02.png" alt=""></p>
+                    <span>출금하기</span>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#a">
+                    <p><img src="assets/img/footer/quick_03.png" alt=""></p>
+                    <span>머니이동</span>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#a">
+                    <p><img src="assets/img/footer/quick_04.png" alt=""></p>
+                    <span>친구초대</span>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#a">
+                    <p><img src="assets/img/footer/quick_05.png" alt=""></p>
+                    <span>배팅내역</span>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#a">
+                    <p><img src="assets/img/footer/quick_06.png" alt=""></p>
+                    <span>이용가이드</span>
+                </a>
+            </li>
+        </ul>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
 
 <!-- mobile nav -->
 <aside class="side_nav">
@@ -148,4 +192,14 @@
         $(this).removeClass('on');
     });
     $('.quick_wrap .__top').click(function () { $('html, body').animate({ scrollTop: 0 }, 400); scrollY = 500; });
+    var footerSwiper = new Swiper(".mo_quick_wrap .inner", {
+        slidesPerView: 4,
+        loop: true,
+        navigation: {
+            nextEl: ".mo_quick_wrap .swiper-button-next",
+            prevEl: ".mo_quick_wrap .swiper-button-prev",
+        },
+        observer: true,
+        observeParents: true,
+    });
 </script>
