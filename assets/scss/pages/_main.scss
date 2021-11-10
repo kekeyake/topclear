@@ -1,6 +1,7 @@
 .main {
     .top_banner {
         max-width: 1920px;
+        min-width: 1295px;
         margin:0 auto;
         overflow: hidden;
         position: relative;
@@ -36,6 +37,11 @@
             font-size: 13px;
             color:#fff;
             margin-left: 10px;
+        }
+        .swiper-slide {
+            img {
+                width: 100%;
+            }
         }
     }
     .main_cont {

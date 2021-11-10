@@ -834,6 +834,19 @@ header, footer, section, article, aside, nav, hgroup, details, menu, figure, fig
   text-align: center;
 }
 
+.footer .sponsor_wrap div li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 78px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .footer .footer_list {
   width: 1296px;
   margin: 115px auto 40px;
@@ -1716,6 +1729,7 @@ input.text {
 
 .main .top_banner {
   max-width: 1920px;
+  min-width: 1295px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -1763,6 +1777,10 @@ input.text {
   font-size: 13px;
   color: #fff;
   margin-left: 10px;
+}
+
+.main .top_banner .swiper-slide img {
+  width: 100%;
 }
 
 .main .main_cont {

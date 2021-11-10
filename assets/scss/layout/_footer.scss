@@ -10,6 +10,12 @@
             overflow: hidden;
             li {
                 text-align: center;
+                a {
+                    display: flex;
+                    height: 78px;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
         }
     }
