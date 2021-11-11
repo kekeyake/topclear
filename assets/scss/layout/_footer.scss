@@ -279,9 +279,14 @@
         }
     }
     .mo_quick_wrap {
+
         display: block;
         background-color: #ff6611;
-        position: relative;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 1000;
+        width: 100%;
         .inner {
             width: 85%;
             margin:0 auto;

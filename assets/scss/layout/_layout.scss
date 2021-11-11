@@ -2,6 +2,15 @@ body {
 	font-size: vw(22);
 	-ms-overflow-style: none; 
     background: #333;
+    overflow-y: auto;
+}
+.wrap {
+    height: auto;
+    padding-bottom: vw(80);
+    &.m_open {
+        height: 100vw;
+        overflow:hidden;
+    }
 }
 ::-webkit-scrollbar { 
 	display: none;
@@ -131,6 +140,9 @@ input {
 	display: flex !important;
 }
 @include desktop {
+    .wrap {
+        padding-bottom: 0;
+    }
     .m {
 		display: none !important;
 	}

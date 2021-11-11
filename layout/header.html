@@ -92,6 +92,55 @@
                     </li>
                 </ul>
             </div>
+            <button class="btn_m_menu"><img src="assets/img/header/btn_m_menu.png" alt=""></button>
+        </section>
+        <section class="mobile_menu">
+            <div class="logo"><img src="assets/img/header/logo.png" alt=""></div>
+            <button class="m_menu_closed"><img src="assets/img/header/m_menu_closed.png" alt=""></button>
+            <div class="user_wrap">
+                <div class="user_box">
+                    <div class="user_state">
+                        <span class="user_name"><b>USER</b>님</span>
+                    </div>                    
+                    <div class="money_box">
+                        <span>0</span>
+                    </div>
+                </div>
+                <ul class="user_link">
+                    <!-- <li class="post">
+                        <a href="#a">
+                            <img src="assets/img/header/ico_mail.png" alt="">
+                            <em>7</em>
+                            <span>쪽지함</span>
+                        </a>
+                    </li> -->
+                    <li class="bookmark">
+                        <a href="#a">
+                            <img src="assets/img/header/ico_bookmark.png" alt="">
+                            <em>7</em>
+                            <span>즐겨찾기</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_btn">
+                <a href="#a" class="my">마이페이지</a>
+                <a href="#a" class="logout">로그아웃</a>
+            </div>
+            <div class="m_menu_list">
+                <p class="tit">전체메뉴</p>
+                <div class="__list">
+                    <a href="#">스포츠</a>
+                    <a href="#">가상스포츠</a>
+                    <a href="#">라이브카지노</a>
+                    <a href="#">슬롯</a>
+                    <a href="#">게임</a>
+                    <a href="#">포커</a>
+                    <a href="#">고객센터</a>
+                    <a href="#">공지사항</a>
+                </div>
+                </ul>
+            </div>
         </section>
     </header>
     <!--// header -->
@@ -104,4 +153,15 @@
         $('.sub_menu_bg').mouseleave(function () {
             $('.sub_menu').removeClass('on');
         });
+        
+        $('.btn_m_menu').on('click',function(){
+            $('.mobile_menu').addClass('open');
+            $('.wrap').addClass('m_open');
+            
+        });
+        $('.m_menu_closed').on('click',function(){
+            $('.mobile_menu').removeClass('open');
+            $('.wrap').removeClass('m_open');
+        });
+        $()
     </script>
