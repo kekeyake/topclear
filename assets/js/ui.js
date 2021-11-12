@@ -4,9 +4,11 @@ $(document).ready( function() {
     $(window).scroll(function (event) {
         if ($(window).scrollTop() >= 100) {
             $('header').addClass('sticky');
+            $('.wrap').addClass('sticky');
         }
         else {
             $('header').removeClass('sticky');
+            $('.wrap').removeClass('sticky');
         }
     });
     if ( $('.top_banner').length > 0 ) {
