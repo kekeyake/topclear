@@ -65,4 +65,20 @@ $(document).ready( function() {
         $(this).closest('.alert_pop').hide();
         $('.bg_dimmed').removeClass('on');
     });
+
+    $('.inner_tab .selected').on('click', function() {
+        $(this).toggleClass('open');
+        $('.inner_tab ul').toggleClass('open');
+    });
+    $('.inner_tab ul li a').on('click', function() {
+        var txt = $(this).text();
+        console.log(txt);
+        $('.inner_tab .selected').text(txt);
+        $('.inner_tab .selected').removeClass('open');
+        $('.inner_tab ul').removeClass('open');
+    });
+    $('.faq_list .q').on('click', function() {
+        $(this).toggleClass('open');
+        $(this).next('.a').toggleClass('open');
+    });
 });
