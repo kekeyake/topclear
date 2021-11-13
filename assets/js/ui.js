@@ -11,6 +11,27 @@ $(document).ready( function() {
             $('.wrap').removeClass('sticky');
         }
     });
+
+    var mql = window.matchMedia("screen and (min-width: 1023px)");
+    if (mql.matches) {
+        $('.__user li').mouseenter(function () {
+            if ( !$(this).hasClass('in_menu') ) {
+                $('.in_menu .sub_tab').hide();
+                $('.sub_menu_bg').hide();
+            } else {
+                $('.in_menu .sub_tab').hide();
+                $(this).find('.sub_tab').show();
+                $('.sub_menu_bg').show();
+                
+            }
+        });
+        $('.in_menu .sub_tab').mouseleave(function () {
+            $(this).hide();
+            $('.sub_menu_bg').hide();
+        });
+    }
+
+
     if ( $('.top_banner').length > 0 ) {
         var swiper = new Swiper(".top_banner", {
             pagination: {

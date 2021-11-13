@@ -83,80 +83,87 @@
     </div>
     <div class="sub_cont">
         <div class="mypage_wrap">
-            <div class="info_cont">
-                <h3>회원정보</h3>
-                <div class="mypage_info_wrap">
-                    <div class="rect user_box">
-                        <div>
-                            <strong class="user">USER</strong><span>님</span>
-                        </div>
-                        <p>아이디</p>
+            <!-- 모바일 메뉴 -->
+            <div class="inner_tab">
+                <div class="selected">입출금</div>
+                <ul>
+                    <li class="active"><a href="#a">입출금</a></li>
+                    <li class=""><a href="#a">암호화폐</a></li>
+                    <li class=""><a href="#a">스포츠</a></li>
+                    <li class=""><a href="#a">가상스포츠</a></li>
+                    <li class=""><a href="#a">라이브카지노</a></li>
+                    <li class=""><a href="#a">슬롯</a></li>
+                    <li class=""><a href="#a">게임</a></li>
+                    <li class=""><a href="#a">포커</a></li>
+                </ul>
+            </div>
+            <div class="buy_cont">
+                <h3 class="tit">입금신청 절차</h3>
+                <div class="step_wrap">
+                    <div class="step_box">
+                        <p class="t1">입금신청</p>
+                        <ol>
+                            <li>입금금액 입력</li>
+                            <li>입금계좌선택</li>
+                        </ol>
                     </div>
-                    <div class="rect grade_box">
-                        <div>
-                            <span class="bg_grade">
-                                <img src="assets/img/ico/class01.png" alt="">
-                            </span>
-                            <b>다이아</b>
-                        </div>
-                        <p>회원등급</p>
+                    <div class="step_box">
+                        <p class="t1">입금진행</p>
+                        <ol>
+                            <li>입금금액 계좌확인</li>
+                            <li>안내된 계좌로 <br>입금계좌에 송금</li>
+                            <li>입금확인요청 클릭</li>
+                        </ol>
                     </div>
-                    <div class="rect otp_box">
-                        <div>
-                            <strong>OTP</strong>
-                        </div>
-                        <p>2차인증</p>
+                    <div class="step_box">
+                        <p class="t1">입금확인</p>
+                        <ol>
+                            <li>담당부서에서 입금확인</li>
+                            <li>입금확인 후 관리자<br>승인처리</li>
+                        </ol>
                     </div>
-                    <div class="btn_box">
-                        <a href="#" class="box">정보수정</a>
-                        <a href="#" class="bg">계좌정보</a>
-                    </div>
-                </div>
-                
-                <h3>보유머니</h3>
-                <div class="mypage_info_wrap">
-                    <div class="rect money_box">
-                        <div>
-                            <strong>1,000,000</strong><span>원</span>
-                        </div>
-                        <p>보유머니</p>
-                    </div>
-                    <div class="rect money_box">
-                        <div>
-                            <b>1,000,000</b>
-                        </div>
-                        <p>보유포인트</p>
-                    </div>
-                    <div class="rect money_box">
-                        <div>
-                            <b>1,000,000</b>
-                        </div>
-                        <p>보유마일리지</p>
-                    </div>
-                    <div class="btn_box">
-                        <a href="#" class="box">입금하기</a>
-                        <a href="#" class="bg">출금하기</a>
+                    <div class="step_box">
+                        <p class="t1">입금완료</p>
+                        <p class="t2">마이페이지에서 확인</p>
                     </div>
                 </div>
-                
-                <h3>커뮤니티</h3>
-                <div class="mypage_info_wrap">
-                    <div class="community_box">
-                        <div>
-                            <img src="assets/img/ico/ico_q.png" alt="">
-                            <p>1:1문의</p>
+                <h3>입금신청</h3>
+                <div class="buy_wrap">
+                    <div class="input_wrap">
+                        <b>입금계좌알림</b>
+                        <div class="input_box">
+                            <input type="text" class="text" placeholder="입금 신청후 계좌 표시">
                         </div>
-                        <a href="#" class="box">답변확인</a>
                     </div>
-                    <div class="community_box">
-                        <div>
-                            <div>
-                                <span>총</span><strong>20</strong><span>명</span>
+                    <div>
+                        <div class="input_wrap">
+                            <b>입금금액</b>
+                            <div class="input_box">
+                                <input type="text" class="text" placeholder="입금금액은 10,000원 이상 가능합니다.">
+                                <button class="btn_del"></button>
                             </div>
-                            <p>친구</p>
                         </div>
-                        <a href="#" class="bg">친구초대</a>
+                        <div class="btn_box">
+                            <button class="btn_cash">+ 1만</button>
+                            <button class="btn_cash active">+ 5만</button>
+                            <button class="btn_cash">+ 10만</button>
+                            <button class="btn_cash">+ 100만</button>
+                            <button class="btn_cash">+ 1000만</button>
+                        </div>
                     </div>
+                    <div class="input_wrap">
+                        <b>입금계좌목록</b>
+                        <div class="input_box">
+                            <select name="" id="" class="select">
+                                <option value="">선택</option>
+                                <option value="">국민은행 222-222-222-222</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn_wrap">
+                    <a href="#" class="box">입금요청</a>
+                    <a href="#" class="bg">입금요청확인</a>
                 </div>
             </div>
         </div>
