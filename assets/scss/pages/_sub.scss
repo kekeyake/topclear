@@ -1180,6 +1180,9 @@
                             border-radius: 12px;
                         }
                     }
+                    .total {
+                        color:#ff6611;
+                    }
                     a {
                         display: block;
                         text-align: left;
@@ -2297,6 +2300,9 @@
                             }
                             p + p {
                                 margin-top: vw(40);
+                            }
+                            span {
+                                color:#ff6611;
                             }
                         }
                     }

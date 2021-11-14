@@ -4575,6 +4575,10 @@ input.text {
   border-radius: 12px;
 }
 
+.sub .mypage_wrap .pay_wrap .table td .total {
+  color: #ff6611;
+}
+
 .sub .mypage_wrap .pay_wrap .table td a {
   display: block;
   text-align: left;
@@ -5759,6 +5763,9 @@ input.text {
   }
   .sub .mypage_wrap .pay_wrap .list li .date_box p + p {
     margin-top: 6.25vw;
+  }
+  .sub .mypage_wrap .pay_wrap .list li .date_box span {
+    color: #ff6611;
   }
   .sub .mypage_wrap .pay_wrap .coupon_apply {
     display: block;
