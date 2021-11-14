@@ -1712,6 +1712,49 @@ input.text {
   color: #999;
 }
 
+.alert_pop .change_wrap .t1 {
+  font-size: 3.4375vw;
+  margin-bottom: 4.6875vw;
+}
+
+.alert_pop .change_wrap .t2 {
+  font-size: 2.5vw;
+  margin-bottom: 4.6875vw;
+  color: #ff6611;
+}
+
+.alert_pop .change_wrap .input_box {
+  position: relative;
+}
+
+.alert_pop .change_wrap .input_box .text {
+  width: 100%;
+  height: 9.375vw;
+  border: 1px solid #999;
+  padding-left: 3.125vw;
+  color: #999;
+  font-size: 2.8125vw;
+}
+
+.alert_pop .change_wrap .input_box .btn_ok {
+  cursor: pointer;
+  width: 10.15625vw;
+  height: 9.375vw;
+  font-size: 2.8125vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  border: 0 solid #000;
+  background-color: #333;
+}
+
+.alert_pop .change_wrap .input_box .btn_ok:hover {
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  background-color: rgba(18, 18, 18, 0.5);
+}
+
 .alert_pop .btn_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1824,6 +1867,44 @@ input.text {
     padding-left: 17px;
     border: 1px solid #999;
     color: #999;
+  }
+  .alert_pop .change_wrap .t1 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+  .alert_pop .change_wrap .t2 {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #ff6611;
+  }
+  .alert_pop .change_wrap .input_box {
+    position: relative;
+  }
+  .alert_pop .change_wrap .input_box .text {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #999;
+    padding-left: 20px;
+    color: #999;
+  }
+  .alert_pop .change_wrap .input_box .btn_ok {
+    cursor: pointer;
+    width: 65px;
+    height: 60px;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    border: 0 solid #000;
+    background-color: #333;
+  }
+  .alert_pop .change_wrap .input_box .btn_ok:hover {
+    -webkit-transition: .5s all;
+    transition: .5s all;
+    background-color: rgba(18, 18, 18, 0.5);
   }
   .alert_pop .btn_wrap {
     margin-top: 50px;
@@ -4453,6 +4534,106 @@ input.text {
   display: none;
 }
 
+.sub .mypage_wrap .change_wrap .input_wrap {
+  border-top: 2px solid #777;
+  border-bottom: 1px solid #777;
+  margin-top: 30px;
+  padding: 20px 50px 40px 30px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.sub .mypage_wrap .change_wrap .input_wrap b {
+  width: 185px;
+}
+
+.sub .mypage_wrap .change_wrap .input_wrap .text_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.sub .mypage_wrap .change_wrap .input_wrap .text_box p {
+  color: #ff6611;
+}
+
+.sub .mypage_wrap .change_wrap .input_wrap .input_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.sub .mypage_wrap .change_wrap .input_wrap .input_box:last-child {
+  margin-bottom: 0;
+}
+
+.sub .mypage_wrap .change_wrap .input_wrap .input_box > div {
+  width: calc(100% - 185px);
+  position: relative;
+}
+
+.sub .mypage_wrap .change_wrap .input_wrap .input_box > div .text {
+  width: 100%;
+  padding-left: 20px;
+}
+
+.sub .mypage_wrap .change_wrap .input_wrap .input_box > div .btn_apply {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 140px;
+  height: 60px;
+  font-size: 18px;
+  border: 1px solid #ff6611;
+  background: #ff6611;
+  color: #fff;
+}
+
+.sub .mypage_wrap .change_wrap .input_wrap .input_box > div .btn_apply:hover {
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  background-color: #333;
+  color: #ff6611;
+}
+
+.sub .mypage_wrap .change_wrap .btn_change {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 45px auto;
+  width: 145px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #ff6611;
+  background: #ff6611;
+  color: #fff;
+}
+
+.sub .mypage_wrap .change_wrap .btn_change:hover {
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  background-color: transparent;
+  color: #ff6611;
+}
+
 @media (max-width: 767px) {
   .sub .top_banner {
     width: 100%;
@@ -5317,6 +5498,47 @@ input.text {
   }
   .sub .mypage_wrap .pay_wrap .list li .date_box p + p {
     margin-top: 6.25vw;
+  }
+  .sub .mypage_wrap .change_wrap h3 {
+    padding-left: 6.25vw;
+  }
+  .sub .mypage_wrap .change_wrap .input_wrap {
+    margin-top: 4.6875vw;
+    padding: 3.125vw 6.25vw 6.25vw;
+    font-size: 2.8125vw;
+  }
+  .sub .mypage_wrap .change_wrap .input_wrap b {
+    width: 14.0625vw;
+  }
+  .sub .mypage_wrap .change_wrap .input_wrap .text_box {
+    padding: 1.5625vw 0;
+    margin-bottom: 6.25vw;
+  }
+  .sub .mypage_wrap .change_wrap .input_wrap .input_box {
+    display: block;
+    margin-bottom: 4.6875vw;
+  }
+  .sub .mypage_wrap .change_wrap .input_wrap .input_box:last-child {
+    margin-bottom: 0;
+  }
+  .sub .mypage_wrap .change_wrap .input_wrap .input_box > div {
+    width: 100%;
+    margin-top: 2.34375vw;
+  }
+  .sub .mypage_wrap .change_wrap .input_wrap .input_box > div .text {
+    font-size: 2.8125vw;
+    padding-left: 3.125vw;
+  }
+  .sub .mypage_wrap .change_wrap .input_wrap .input_box > div .btn_apply {
+    width: 21.875vw;
+    height: 9.375vw;
+    font-size: 2.8125vw;
+  }
+  .sub .mypage_wrap .change_wrap .btn_change {
+    margin: 7.03125vw auto;
+    width: 88%;
+    height: 9.375vw;
+    font-size: 2.8125vw;
   }
 }
 /*# sourceMappingURL=common.css.map */
