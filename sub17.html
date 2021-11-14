@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TOP CLEAR">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <title>TOP CLEAR</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="assets/css/font.css" />
+    <link type="text/css" rel="stylesheet" href="assets/libs/swiper-bundle.min.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/common.min.css" />
+    <script defer src="assets/libs/jquery-3.6.0.min.js"></script>
+    <script defer src="assets/libs/swiper-bundle.min.js"></script>
+</head>
+<body>
+<div class="bg_dimmed"></div>
+<div id="wrap" class="wrap">
+<!-- main, sub만 사용 -->
+<div data-include-path="layout/header.html" id="headers"></div>
+
+
+<main class="sub">
+    <div class="top_visual mypage">
+        <div class="text_box">
+            <h2>마이페이지</h2>
+        </div>
+    </div>
+    <div class="tab_menu __user">
+        <ul>
+            <li class="active"><a href="#" class="mypage">마이페이지</a></li>
+            <li class="in_menu">
+                <a href="#">입출금</a>
+                <div class="sub_tab">
+                    <div class="sub_menu">
+                        <a href="#" class="active">입금신청</a>
+                        <a href="#">출금신청</a>
+                        <a href="#">입금내역</a>
+                        <a href="#">출금내역</a>
+                        <a href="#">계좌정보</a>
+                    </div>
+                </div>
+            </li>
+            <li class="in_menu">
+                <a href="#">머니</a>
+                <div class="sub_tab">
+                    <div class="sub_menu">
+                        <a href="#" class="active">입금신청</a>
+                        <a href="#">출금신청</a>
+                        <a href="#">입금내역</a>
+                        <a href="#">출금내역</a>
+                    </div>
+                </div>
+            </li>
+            <li class="in_menu">
+                <a href="#">쿠폰</a>
+                <div class="sub_tab">
+                    <div class="sub_menu">
+                        <a href="#" class="active">쿠폰등록</a>
+                        <a href="#">쿠폰목록</a>
+                    </div>
+                </div>
+            </li>
+            <li class=""><a href="#">1:1문의</a></li>
+            <li class=""><a href="#">쪽지함</a></li>
+            <li class=""><a href="#">친구초대</a></li>
+            <li class=""><a href="#">배팅내역</a></li>
+            <li class="in_menu">
+                <a href="#">보안관리</a>
+                <div class="sub_tab">
+                    <div class="sub_menu">
+                        <a href="#" class="active">OTP 등록 가이드</a>
+                        <a href="#">OTP 보안 관리</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="sub_menu_bg"></div>
+    </div>
+    <div class="sub_cont">
+        <div class="mypage_wrap">
+            <!-- 모바일 메뉴 -->
+            <div class="inner_tab">
+                <div class="selected">입출금</div>
+                <ul>
+                    <li class="active"><a href="#a">입출금</a></li>
+                    <li class=""><a href="#a">암호화폐</a></li>
+                    <li class=""><a href="#a">스포츠</a></li>
+                    <li class=""><a href="#a">가상스포츠</a></li>
+                    <li class=""><a href="#a">라이브카지노</a></li>
+                    <li class=""><a href="#a">슬롯</a></li>
+                    <li class=""><a href="#a">게임</a></li>
+                    <li class=""><a href="#a">포커</a></li>
+                </ul>
+            </div>
+            <div class="pay_wrap">
+                <h3>쿠폰등록</h3>
+                <div class="coupon_apply">
+                    <b>쿠폰등록</b>
+                    <div>
+                        <input type="text" class="text" placeholder="정확한 쿠폰번호를 입력해주세요">
+                    </div>
+                </div>
+            </div>
+            <div class="btn_wrap">
+                <a href="#" class="box">취소</a>
+                <a href="#" class="bg">쿠폰등록</a>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="alert_pop" id="tgAccount">
+    <div class="change_wrap">
+        <p class="t1">쿠폰등록</p>
+        <p class="t2">쿠폰번호를 입력해주세요</p>
+        
+        <div class="input_box">
+            <input type="text" class="text" placeholder="쿠폰번호를 입력해주세요">
+            <button class="btn_ok">확인</button>
+        </div>
+    </div>
+    <button type="button" class="btn btn_x" onClick="common.popClose(tgAccount);"></button>
+</div>
+<!-- main, sub만 사용 -->
+<div data-include-path="layout/footer.html" id="footers"></div>
+<script defer src="assets/js/ui.js"></script>
+</body>
+</html>

@@ -1888,6 +1888,7 @@ input.text {
     border: 1px solid #999;
     padding-left: 20px;
     color: #999;
+    font-size: 18px;
   }
   .alert_pop .change_wrap .input_box .btn_ok {
     cursor: pointer;
@@ -4502,6 +4503,13 @@ input.text {
   color: #ff6611;
 }
 
+.sub .mypage_wrap .pay_wrap .list_info .btn_coupon {
+  background: transparent;
+  border: 0 solid #000;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
 .sub .mypage_wrap .pay_wrap .table {
   table-layout: fixed;
   border-top: 2px solid #ccc;
@@ -4532,6 +4540,45 @@ input.text {
 
 .sub .mypage_wrap .pay_wrap .list {
   display: none;
+}
+
+.sub .mypage_wrap .pay_wrap .coupon_apply {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
+  padding: 35px 0;
+  border-top: 2px solid #777;
+  border-bottom: 1px solid #777;
+}
+
+.sub .mypage_wrap .pay_wrap .coupon_apply b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  color: #ff6611;
+  width: 185px;
+  height: 101px;
+  background: url(../img/ico/ico_coupon_bg.png) no-repeat 0 0/99%;
+}
+
+.sub .mypage_wrap .pay_wrap .coupon_apply div {
+  width: calc(100% - 190px);
+  padding-left: 60px;
+}
+
+.sub .mypage_wrap .pay_wrap .coupon_apply div .text {
+  padding-left: 20px;
 }
 
 .sub .mypage_wrap .change_wrap .input_wrap {
@@ -4632,6 +4679,33 @@ input.text {
   transition: .5s all;
   background-color: transparent;
   color: #ff6611;
+}
+
+.sub .mypage_wrap .holding_wrap .__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 5px solid #ff6611;
+  padding-bottom: 15px;
+  margin: 90px 0;
+}
+
+.sub .mypage_wrap .holding_wrap .__head .tit {
+  margin-top: 0;
+}
+
+.sub .mypage_wrap .holding_wrap .__head .money {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.sub .mypage_wrap .holding_wrap .__head .money span {
+  color: #ff6611;
+  margin-left: 20px;
 }
 
 @media (max-width: 767px) {
@@ -5417,6 +5491,13 @@ input.text {
     width: 22.65625vw;
     height: 9.375vw;
   }
+  .sub .mypage_wrap .pay_wrap .list_info .btn_coupon {
+    -webkit-transform: translateY(5vw);
+            transform: translateY(5vw);
+  }
+  .sub .mypage_wrap .pay_wrap .list_info .btn_coupon img {
+    width: 23.4375vw;
+  }
   .sub .mypage_wrap .pay_wrap .table {
     display: none;
   }
@@ -5499,6 +5580,34 @@ input.text {
   .sub .mypage_wrap .pay_wrap .list li .date_box p + p {
     margin-top: 6.25vw;
   }
+  .sub .mypage_wrap .pay_wrap .coupon_apply {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5.46875vw;
+    padding: 5.46875vw 7.8125vw;
+    border-top: 2px solid #777;
+    border-bottom: 1px solid #777;
+  }
+  .sub .mypage_wrap .pay_wrap .coupon_apply b {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    font-size: 2.8125vw;
+    width: 28.90625vw;
+    height: 15.78125vw;
+    background: url(../img/ico/ico_coupon_bg.png) no-repeat 0 0/99%;
+  }
+  .sub .mypage_wrap .pay_wrap .coupon_apply div {
+    margin-top: 3.125vw;
+    width: 100%;
+    padding-left: 0;
+  }
+  .sub .mypage_wrap .pay_wrap .coupon_apply div .text {
+    padding-left: 3.125vw;
+  }
   .sub .mypage_wrap .change_wrap h3 {
     padding-left: 6.25vw;
   }
@@ -5539,6 +5648,28 @@ input.text {
     width: 88%;
     height: 9.375vw;
     font-size: 2.8125vw;
+  }
+  .sub .mypage_wrap .holding_wrap h3 {
+    padding-left: 6.25vw;
+  }
+  .sub .mypage_wrap .holding_wrap .__head {
+    width: 88%;
+    border-bottom: 0.78125vw solid #ff6611;
+    padding: 0 0 2.34375vw;
+    margin: 14.0625vw auto;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .sub .mypage_wrap .holding_wrap .__head .tit {
+    padding-left: 0;
+    margin-bottom: 7.8125vw;
+  }
+  .sub .mypage_wrap .holding_wrap .__head .money {
+    font-size: 6.25vw;
+  }
+  .sub .mypage_wrap .holding_wrap .__head .money span {
+    margin-left: 3.125vw;
   }
 }
 /*# sourceMappingURL=common.css.map */
