@@ -1121,6 +1121,40 @@
                     border: 0 solid #000;
                     transform: translateY(20px);
                 }
+                .btn_invite {
+                    margin-left: auto;
+                    width: 165px;
+                    height: 60px;
+                    padding:0 15px;
+                    color:#fff;
+                    cursor: pointer;
+                    background-color: #ff6611;
+                    border: 1px solid #ff6611;
+                    span {
+                        color:#fff;
+                        padding-left: 35px;
+                        display: block;
+                        line-height: 60px;
+                    }
+                    &:hover {
+                        transition: .5s all;
+                        background-color: transparent;
+                        color:#ff6611;
+                    }
+                    & + .btn_invite {
+                        margin-left: 15px;
+                    }
+                    &.email {
+                        span {
+                            background: url(../img/ico/ico_email.png) no-repeat 0 50% / 34px;
+                        }
+                    }
+                    &.url {
+                        span {
+                            background: url(../img/ico/ico_url.png) no-repeat 0 50% / 34px;
+                        }
+                    }
+                }
             }
             .table {
                 table-layout: fixed;
@@ -1158,6 +1192,22 @@
                         &:hover {
                             color:#ff6611;
                             text-decoration: underline;
+                        }
+                        &.btn_money {
+                            display: inline-flex;
+                            box-sizing: border-box;
+                            width: auto;
+                            padding:10px 15px;
+                            text-align: center;
+                            border: 1px solid #ff6611;
+                            border-radius: 12px;
+                            color:#ff6611;
+                            text-decoration: none;
+                            &:hover {
+                                transition: .5s all;
+                                color:#fff;
+                                background-color: #ff6611;
+                            }
                         }
                     }
                 }
@@ -2120,6 +2170,7 @@
                     margin-top: vw(30);
                     padding:0 vw(20);
                     font-size: vw(18);
+                    flex-wrap: wrap;
                     .btn_apply {
                         width: vw(145);
                         height: vw(60);
@@ -2128,6 +2179,37 @@
                         transform: translateY(5vw);
                         img {
                             width: vw(150);
+                        }
+                    }
+                    .btn_invite {
+                        margin-left: 0;
+                        width: 48%;
+                        height: vw(60);
+                        padding:0;
+                        span {
+                            width: max-content;
+                            padding-left: vw(40);
+                            display: block;
+                            margin:0 auto;
+                            line-height: vw(60);
+                        }
+                        &:hover {
+                            transition: .5s all;
+                            background-color: transparent;
+                            color:#ff6611;
+                        }
+                        & + .btn_invite {
+                            margin-left: 15px;
+                        }
+                        &.email {
+                            span {
+                                background: url(../img/ico/ico_email.png) no-repeat 0 50% / vw(34);
+                            }
+                        }
+                        &.url {
+                            span {
+                                background: url(../img/ico/ico_url.png) no-repeat 0 50% / vw(34);
+                            }
                         }
                     }
                 }

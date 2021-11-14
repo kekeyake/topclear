@@ -4510,6 +4510,43 @@ input.text {
           transform: translateY(20px);
 }
 
+.sub .mypage_wrap .pay_wrap .list_info .btn_invite {
+  margin-left: auto;
+  width: 165px;
+  height: 60px;
+  padding: 0 15px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #ff6611;
+  border: 1px solid #ff6611;
+}
+
+.sub .mypage_wrap .pay_wrap .list_info .btn_invite span {
+  color: #fff;
+  padding-left: 35px;
+  display: block;
+  line-height: 60px;
+}
+
+.sub .mypage_wrap .pay_wrap .list_info .btn_invite:hover {
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  background-color: transparent;
+  color: #ff6611;
+}
+
+.sub .mypage_wrap .pay_wrap .list_info .btn_invite + .btn_invite {
+  margin-left: 15px;
+}
+
+.sub .mypage_wrap .pay_wrap .list_info .btn_invite.email span {
+  background: url(../img/ico/ico_email.png) no-repeat 0 50%/34px;
+}
+
+.sub .mypage_wrap .pay_wrap .list_info .btn_invite.url span {
+  background: url(../img/ico/ico_url.png) no-repeat 0 50%/34px;
+}
+
 .sub .mypage_wrap .pay_wrap .table {
   table-layout: fixed;
   border-top: 2px solid #ccc;
@@ -4552,6 +4589,28 @@ input.text {
 .sub .mypage_wrap .pay_wrap .table td a:hover {
   color: #ff6611;
   text-decoration: underline;
+}
+
+.sub .mypage_wrap .pay_wrap .table td a.btn_money {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: auto;
+  padding: 10px 15px;
+  text-align: center;
+  border: 1px solid #ff6611;
+  border-radius: 12px;
+  color: #ff6611;
+  text-decoration: none;
+}
+
+.sub .mypage_wrap .pay_wrap .table td a.btn_money:hover {
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  color: #fff;
+  background-color: #ff6611;
 }
 
 .sub .mypage_wrap .pay_wrap .list {
@@ -5551,6 +5610,8 @@ input.text {
     margin-top: 4.6875vw;
     padding: 0 3.125vw;
     font-size: 2.8125vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .sub .mypage_wrap .pay_wrap .list_info .btn_apply {
     width: 22.65625vw;
@@ -5562,6 +5623,36 @@ input.text {
   }
   .sub .mypage_wrap .pay_wrap .list_info .btn_coupon img {
     width: 23.4375vw;
+  }
+  .sub .mypage_wrap .pay_wrap .list_info .btn_invite {
+    margin-left: 0;
+    width: 48%;
+    height: 9.375vw;
+    padding: 0;
+  }
+  .sub .mypage_wrap .pay_wrap .list_info .btn_invite span {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding-left: 6.25vw;
+    display: block;
+    margin: 0 auto;
+    line-height: 9.375vw;
+  }
+  .sub .mypage_wrap .pay_wrap .list_info .btn_invite:hover {
+    -webkit-transition: .5s all;
+    transition: .5s all;
+    background-color: transparent;
+    color: #ff6611;
+  }
+  .sub .mypage_wrap .pay_wrap .list_info .btn_invite + .btn_invite {
+    margin-left: 15px;
+  }
+  .sub .mypage_wrap .pay_wrap .list_info .btn_invite.email span {
+    background: url(../img/ico/ico_email.png) no-repeat 0 50%/5.3125vw;
+  }
+  .sub .mypage_wrap .pay_wrap .list_info .btn_invite.url span {
+    background: url(../img/ico/ico_url.png) no-repeat 0 50%/5.3125vw;
   }
   .sub .mypage_wrap .pay_wrap .table {
     display: none;
