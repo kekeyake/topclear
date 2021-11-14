@@ -36,13 +36,15 @@
         <a href="#a" class="link btn_border"><span>회원가입</span></a>
     </div>
 </main>
-<div class="alert_pop">
-    <p class="t1">로그인 오류</p>
-    <p class="t2">로그인 오류 메세지</p>
+<div class="alert_pop" id="tgAccount" style="display: block;">
+    <div class="pop_style1">
+        <p class="t1">로그인 오류</p>
+        <p class="t2">로그인 오류 메세지</p>
+    </div>
     <div class="btn_wrap">
         <button type="button" class="btn button_b"><span>확인</span></button>
     </div>
-    <button type="button" class="btn btn_x"></button>
+    <button type="button" class="btn btn_x" onClick="common.popClose(tgAccount);"></button>
 </div>
 <!-- main, sub만 사용 -->
 <!-- <div data-include-path="layout/footer.html" id="footers"></div> -->

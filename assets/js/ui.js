@@ -79,7 +79,7 @@ $(document).ready( function() {
         $('.bg_dimmed').addClass('on');
     });
     $('.btn_x').on('click',function(){
-        $(this).closest('.alert_pop').hide();
+        // $(this).closest('.alert_pop').hide();
         $('.bg_dimmed').removeClass('on');
     });
     $('.button_b').on('click', function () {
@@ -102,4 +102,18 @@ $(document).ready( function() {
         $(this).toggleClass('open');
         $(this).next('.a').toggleClass('open');
     });
+    $('.pay_wrap .price_box').on('click', function() {
+        $(this).toggleClass('open');
+        $(this).next('.date_box').toggleClass('open');
+    });
+    common = {
+        popOpen: function(o) {
+            $(o).show().addClass('open');
+            $('.bg_dimmed').addClass('on');
+        },
+        popClose: function(o) {
+            $(o).hide().removeClass('open');
+            $('.bg_dimmed').removeClass('on');
+        },
+    }
 });

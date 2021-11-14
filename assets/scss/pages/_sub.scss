@@ -1091,6 +1091,62 @@
                 }
             }
         }
+        .pay_wrap {
+            .list_info {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                margin-top: 50px;
+                font-size: 18px;
+                color:#b6b6b6;
+                letter-spacing: -1px;
+                span {
+                    color:#ff6611;
+                }
+                .btn_apply {
+                    width: 145px;
+                    height: 60px;
+                    color:#fff;
+                    cursor: pointer;
+                    background-color: #ff6611;
+                    border: 1px solid #ff6611;
+                    &:hover {
+                        transition: .5s all;
+                        background-color: transparent;
+                        color:#ff6611;
+                    }
+                }
+            }
+            .table {
+                table-layout: fixed;
+                border-top: 2px solid #ccc;
+                margin-top: 20px;
+                width: 100%;
+                font-size: 18px;
+                color:#fff;
+                th {
+                    padding:30px 0;
+                    font-weight: 700;
+                    border-bottom: 1px solid #ccc;
+                }
+                td {
+                    text-align: center;
+                    padding:30px 0;
+                    border-bottom: 1px solid #ccc;
+                    .status {
+                        &.ing {
+                            border: 1px solid #ff6611;
+                            color:#ff6611;
+                            padding:15px 20px;
+                            border-radius: 12px;
+                        }
+                    }
+                }
+            }
+            .list {
+                display: none;
+            }
+        }
     }
 }
 
@@ -1874,6 +1930,88 @@
                     height: vw(60);
                     & + a {
                         margin-left: 4%;
+                    }
+                }
+            }
+            .pay_wrap {
+                h3 {
+                    padding-left: vw(20);
+                }
+                .list_info {
+                    margin-top: vw(30);
+                    padding:0 vw(20);
+                    font-size: vw(18);
+                    .btn_apply {
+                        width: vw(145);
+                        height: vw(60);
+                    }
+                }
+                .table {
+                    display: none;
+                }
+                .list {
+                    display: block;
+                    color:#fff;
+                    font-size: vw(18);
+                    margin-top: vw(30);
+                    border-top: 1px solid #777;
+                    li {
+                        border-bottom: 1px solid #777;
+                        .price_box {
+                            cursor: pointer;
+                            display: flex;
+                            align-self: center;
+                            padding:vw(15) vw(30);
+                            background: url(../img/ico/ico_select.png) no-repeat right vw(45) top 50% / vw(19);
+                            text-align: center;
+                            &.open {
+                                background: url(../img/ico/ico_select_open.png) no-repeat right vw(45) top 50% / vw(19);    
+                            }
+                            span {
+                                display: inline-flex;
+                                align-self: center;
+                                width: 30%;
+                                padding:vw(15) vw(10);
+                                text-align: left;
+                                box-sizing: border-box;
+                            }
+                            b {
+                                display: inline-flex;
+                                align-self: center;
+                                width: 40%;
+                                font-weight: 700;
+                                font-size: vw(24);
+                                padding:vw(15) 0 vw(15) vw(30);
+                            }
+                            .status {
+                                width: 20%;
+                                text-align: center;
+                                display: inline-flex;
+                                align-self: center;
+                                justify-content: center;
+                                &.ing {
+                                    border: 1px solid #ff6611;
+                                    color:#ff6611;
+                                    border-radius: 12px;
+                                }
+                            }
+                            .account {
+                                width: 40%;
+                                background: #333;
+                            }
+
+                        }
+                        .date_box {
+                            display: none;
+                            padding:vw(35) vw(65);
+                            background-color: #444;
+                            &.open {
+                                display: block;
+                            }
+                            p + p {
+                                margin-top: vw(40);
+                            }
+                        }
                     }
                 }
             }

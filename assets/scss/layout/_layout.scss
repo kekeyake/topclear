@@ -90,6 +90,7 @@ input {
     }
 }
 .alert_pop {
+    display: none;
     z-index: 60;
     position: fixed;
     left: 50%;
@@ -97,17 +98,47 @@ input {
     transform: translate(-50%,-50%);
     background: #fff;
     width: 90%;
-    padding:50px 40px;
+    padding:vw(50) vw(40);
     color:#121212;
     letter-spacing: vw(-1);
-    .t1 {
-        font-size: vw(22);
-        font-weight: 700;
-        margin-bottom: vw(30);
+    &.open {
+        display: block;
     }
-    .t2 {
-        font-size: vw(18);
-        color:#333;
+    .pop_style1 {
+        .t1 {
+            font-size: vw(22);
+            font-weight: 700;
+            margin-bottom: vw(30);
+        }
+        .t2 {
+            font-size: vw(18);
+            color:#333;
+        }
+    }
+    .account_wrap {
+        .input_box {
+            width: 100%;
+            margin-bottom: vw(30);
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .select {
+                width: 100%;
+                height: vw(60);
+                font-size: vw(18);
+                padding-left: vw(17);
+                color:#999;
+                background: url(../img/ico/ico_select2.png) no-repeat right vw(19) top 50% / vw(19);
+            }
+            .text {
+                width: 100%;
+                height: vw(60);
+                font-size: vw(18);
+                padding-left: vw(17);
+                border: 1px solid #999;
+                color:#999;
+            }
+        }
     }
     .btn_wrap {
         display: flex;
@@ -178,13 +209,44 @@ input {
     }
     .alert_pop {
         width: 580px;
+        padding:50px 40px;
         letter-spacing: -1px;
-        .t1 {
-            font-size: 22px;
-            margin-bottom: 30px;
+        &.open {
+            display: block;
         }
-        .t2 {
-            font-size: 18px;
+        .pop_style1 {
+            .t1 {
+                font-size: 22px;
+                margin-bottom: 30px;
+            }
+            .t2 {
+                font-size: 18px;
+            }
+        }
+        .account_wrap {
+            .input_box {
+                width: 100%;
+                margin-bottom: 30px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .select {
+                    width: 100%;
+                    height: 60px;
+                    font-size: 18px;
+                    padding-left: 17px;
+                    color:#999;
+                    background: url(../img/ico/ico_select2.png) no-repeat right 19px top 50% / 19px;
+                }
+                .text {
+                    width: 100%;
+                    height: 60px;
+                    font-size: 18px;
+                    padding-left: 17px;
+                    border: 1px solid #999;
+                    color:#999;
+                }
+            }
         }
         .btn_wrap {
             margin-top: 50px;
