@@ -1379,6 +1379,114 @@
                 }
             }
         }
+        .otp_wrap {
+            .otp_cont {
+                margin-top: 20px;
+                color:#fff;
+                min-height: 200px;
+                font-size: 24px;
+            }
+            .__head {
+                margin-bottom: 100px;
+                p {
+                    margin-top: 45px;
+                    font-size: 18px;
+                    color:#fff;
+                    word-break: keep-all;
+                    line-height: 1.6;
+                }
+            }
+            .otp_step {
+                margin-top: 35px;
+                .step_box {
+                    position: relative;
+                    border: 1px solid #777;
+                    padding:30px;
+                    margin-bottom: 27px;
+                    .qr_code {
+                        position: absolute;
+                        right:10px;
+                        top:10px;
+                    }
+                    .t1 {
+                        font-size: 32px;
+                        color:#ff6611;
+                        font-weight: 700;
+                        letter-spacing: -1px;
+                    }
+                    .t2 {
+                        margin-top: 35px;
+                        font-size: 18px;
+                        color:#fff;
+                    }
+                    .input_box {
+                        margin-top: 70px;
+                        position: relative;
+                        display: flex;
+                        .text {
+                            width: 745px;
+                            padding-left: 20px;
+                        }
+                        .btn_apply {
+                            cursor: pointer;
+                            width: 125px;
+                            height: 60px;
+                            border: 1px solid #ff6611;
+                            background-color: #ff6611;
+                            color:#fff;
+                            font-size: 16px;
+                            box-sizing: border-box;
+                            &:hover {
+                                transition: .5s all;
+                                border: 1px solid #ff6611;
+                                background-color: #333;
+                                color:#ff6611;
+                            }
+                        }
+                    }
+                    &::after {
+                        content: '';
+                        display: block;
+                        background: url(../img/ico/ico_step_m.png) no-repeat 0 0 / 99%;
+                        width: 63px;
+                        height: 91px;
+                        position: absolute;
+                        top:auto;
+                        bottom:-29px;
+                        right: -1px;
+                        z-index: 1;
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .btn_change {
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:45px auto;
+                width: 145px;
+                height: 60px;
+                font-size: 18px;
+                font-weight: 700;
+                text-decoration: none;
+                box-sizing: border-box;
+                border: 1px solid #ff6611;
+                background: #ff6611;
+                color:#fff;
+                &:hover {
+                    transition: .5s all;
+                    background-color: transparent;
+                    color:#ff6611;
+
+                }
+            }
+        }
     }
 }
 
@@ -1607,6 +1715,9 @@
                         a {
                             color:#ff6611;
                             font-weight: 700;
+                            &.mypage {
+                                background: url(../img/ico/ico_mypage_on.png) no-repeat 100% 50% / vw(19);
+                            }
                             &::after {
                                 content: '';
                                 display: block;
@@ -2426,6 +2537,78 @@
                             margin-left: vw(20);
                         }
                     }
+                }
+            }
+            .otp_wrap {
+                padding:0 vw(50);
+                .otp_cont {
+                    margin-top: vw(20);
+                    min-height: vw(200);
+                    font-size: vw(24);
+                    img {
+                        width: 100%;
+                    }
+                }
+                .__head {
+                    margin-bottom: vw(100);
+                    .tit {
+                        font-size: vw(32);
+                    }
+                    p {
+                        margin-top: vw(35);
+                        font-size: vw(18);
+                    }
+                }
+                .otp_step {
+                    margin-top: vw(35);
+                    .step_box {
+                        padding:vw(30);
+                        margin-bottom: vw(27);
+                        .qr_code {
+                            position: absolute;
+                            right:10px;
+                            top:10px;
+                            width: vw(50);
+                        }
+                        .t1 {
+                            font-size: vw(32);
+                        }
+                        .t2 {
+                            margin-top: vw(35);
+                            font-size: vw(18);
+                        }
+                        .input_box {
+                            margin-top: vw(70);
+                            width: 90%;
+                            .text {
+                                width: 100%;
+                                padding-left: vw(20);
+                            }
+                            .btn_apply {
+                                position: absolute;
+                                right:0;
+                                top:0;
+                                cursor: pointer;
+                                width: vw(125);
+                                height: vw(60);
+                                font-size: vw(16);
+                            }
+                        }
+                        &::after {
+                            width: vw(63);
+                            height: vw(91);
+                            position: absolute;
+                            bottom:vw(-29);
+                            right: -1px;
+                            z-index: 1;
+                        }
+                    }
+                }
+                .btn_change {
+                    margin:vw(45) auto;
+                    width: 100%;
+                    height: vw(60);
+                    font-size: vw(18);
                 }
             }
         }
