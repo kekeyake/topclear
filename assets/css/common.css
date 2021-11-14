@@ -4538,6 +4538,22 @@ input.text {
   border-radius: 12px;
 }
 
+.sub .mypage_wrap .pay_wrap .table td a {
+  display: block;
+  text-align: left;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sub .mypage_wrap .pay_wrap .table td a:hover {
+  color: #ff6611;
+  text-decoration: underline;
+}
+
 .sub .mypage_wrap .pay_wrap .list {
   display: none;
 }
@@ -4579,6 +4595,55 @@ input.text {
 
 .sub .mypage_wrap .pay_wrap .coupon_apply div .text {
   padding-left: 20px;
+}
+
+.sub .mypage_wrap .pay_wrap .write_wrap {
+  margin-top: 40px;
+}
+
+.sub .mypage_wrap .pay_wrap .write_wrap h3 {
+  padding-bottom: 40px;
+  border-bottom: 2px solid #777;
+}
+
+.sub .mypage_wrap .pay_wrap .write_wrap .input_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  border-bottom: 1px solid #777;
+  font-size: 18px;
+}
+
+.sub .mypage_wrap .pay_wrap .write_wrap .input_box b {
+  width: 175px;
+  color: #fff;
+}
+
+.sub .mypage_wrap .pay_wrap .write_wrap .input_box div {
+  width: calc(100% - 175px);
+}
+
+.sub .mypage_wrap .pay_wrap .write_wrap .input_box .select {
+  width: 100%;
+  height: 60px;
+  padding-left: 20px;
+  color: #b6b6b6;
+  border-bottom: 0 solid #000;
+  background: #fff url(../img/ico/ico_select.png) no-repeat right 13px top 50%/19px;
+}
+
+.sub .mypage_wrap .pay_wrap .write_wrap .input_box .text {
+  padding-left: 20px;
+}
+
+.sub .mypage_wrap .pay_wrap .write_wrap .input_box textarea {
+  width: 100%;
+  border: 0 solid #000;
+  padding: 20px;
 }
 
 .sub .mypage_wrap .change_wrap .input_wrap {
@@ -5522,6 +5587,30 @@ input.text {
     background: url(../img/ico/ico_select.png) no-repeat right 7.03125vw top 50%/2.96875vw;
     text-align: center;
   }
+  .sub .mypage_wrap .pay_wrap .list li .price_box.qna {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sub .mypage_wrap .pay_wrap .list li .price_box.qna .status {
+    color: #ff6611;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .sub .mypage_wrap .pay_wrap .list li .price_box.qna .date {
+    width: 100%;
+  }
+  .sub .mypage_wrap .pay_wrap .list li .price_box.qna b {
+    display: block;
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 0;
+    text-align: left;
+  }
   .sub .mypage_wrap .pay_wrap .list li .price_box.open {
     background: url(../img/ico/ico_select_open.png) no-repeat right 7.03125vw top 50%/2.96875vw;
   }
@@ -5607,6 +5696,37 @@ input.text {
   }
   .sub .mypage_wrap .pay_wrap .coupon_apply div .text {
     padding-left: 3.125vw;
+  }
+  .sub .mypage_wrap .pay_wrap .write_wrap {
+    margin-top: 6.25vw;
+  }
+  .sub .mypage_wrap .pay_wrap .write_wrap h3 {
+    padding-left: 7.8125vw;
+    padding-bottom: 4.6875vw;
+  }
+  .sub .mypage_wrap .pay_wrap .write_wrap .input_box {
+    display: block;
+    padding: 4.6875vw 7.8125vw;
+    font-size: 3.125vw;
+  }
+  .sub .mypage_wrap .pay_wrap .write_wrap .input_box b {
+    width: 100%;
+  }
+  .sub .mypage_wrap .pay_wrap .write_wrap .input_box div {
+    margin-top: 3.125vw;
+    width: 100%;
+  }
+  .sub .mypage_wrap .pay_wrap .write_wrap .input_box .select {
+    width: 100%;
+    height: 9.375vw;
+    padding-left: 3.125vw;
+    background: #fff url(../img/ico/ico_select.png) no-repeat right 2.03125vw top 50%/2.96875vw;
+  }
+  .sub .mypage_wrap .pay_wrap .write_wrap .input_box .text {
+    padding-left: 3.125vw;
+  }
+  .sub .mypage_wrap .pay_wrap .write_wrap .input_box textarea {
+    padding: 3.125vw;
   }
   .sub .mypage_wrap .change_wrap h3 {
     padding-left: 6.25vw;
